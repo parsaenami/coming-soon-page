@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="all flex-col al-center">
+      <script src="./assets/js/script.js"></script>
+      <!-- <nav class="navbar"> </nav> -->
+      <div class="video-container flex-col al-center jus-center">
+        <video autoplay muted class="video-class">
+          <source src="./assets/img/coming-soon.mp4" type="video/mp4" />
+        </video>
+        <div class="countdown-container flex-row jus-between">
+          <!-- <div class="my-countdown flex-row al-center jus-center" id="cd"></div> -->
+          <div class="counter-block-wrapper flex-col al-center jus-center">
+            <div class="counter-block al-center jus-center" id="day"></div>
+            <span>Days</span>
+          </div>
+          <div class="counter-block-wrapper flex-col al-center jus-center">
+            <div class="counter-block al-center jus-center" id="hour"></div>
+            <span>Hours</span>
+          </div>
+          <div class="counter-block-wrapper flex-col al-center jus-center">
+            <div class="counter-block al-center jus-center" id="minute"></div>
+            <span>Minutes</span>
+          </div>
+          <div class="counter-block-wrapper flex-col al-center jus-center">
+            <div class="counter-block al-center jus-center" id="second"></div>
+            <span>Seconds</span>
+          </div>
+        </div>
+        <div></div>
+      </div>
+
+      <div class="flex-col al-center contact-container">
+        <div class="contact-wrapper">
+          <form
+            class="contact-form"
+            action="./assets/php/index.php"
+            method="post"
+            name="form"
+          >
+            <span class="contact-title">
+              Contact Us
+            </span>
+
+            <div class="contact-input" data-validate="Please enter your name">
+              <input type="text" name="name" placeholder="Full Name" required />
+              <span class="focus-input100"></span>
+            </div>
+
+            <div
+              class="contact-input"
+              data-validate="Please enter your email: e@a.x"
+            >
+              <input type="text" name="email" placeholder="Email" required />
+              <span class="focus-input100"></span>
+            </div>
+
+            <div
+              class="contact-input"
+              data-validate="Please enter your message"
+            >
+              <textarea
+                name="message"
+                placeholder="Write down your comment..."
+                required
+              ></textarea>
+              <span class="focus-input100"></span>
+            </div>
+
+            <div class="flex-row jus-center">
+              <input
+                type="submit"
+                name="submit"
+                value="Send"
+                class="contact-btn"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="divider flex-row jus-between al-center">
+        <hr />
+        <span>Or</span>
+        <hr />
+      </div>
+
+      <div class="social flex-row jus-between al-center">
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><div class="al-center flex-row jus-center"><i class="fa fa-instagram" style="font-size:25px;"></i></div></a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><div class="al-center flex-row jus-center"><i class="fa fa-linkedin" style="font-size:25px;"></i></div></a>
+      </div>
+
+      <footer class="al-center flex-row jus-center">
+        © 2020 All Rights Reserved | Measurge Company
+      </footer>
+    </div>
+  </body>
+</html>
